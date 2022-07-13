@@ -7,5 +7,7 @@ pip3 install requests && pip3 install bs4 && pip3 install os && python3 -V
 
 ### usage
 ```
-python3 main.py
+git clone https://github.com/eawlot3000/chanloader.git
+cd chanloader
+ipython3 main.py
 ```
