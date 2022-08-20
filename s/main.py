@@ -2,9 +2,12 @@ import requests
 from bs4 import BeautifulSoup as bs
 import os
 
-chan = input('\ngive me a base channel\neg: if: https://boards.4chan.org/s/\nthen give me "s"\n\n--> ')
-chan = "https://boards.4chan.org/" + chan + "/"
-howmanypages = int(input('\nhow many pages do you want?\neg1: 1 (only the first page)\neg2: 10 (download all from page1 to page10)\n\n--> '))
+chan = 'https://boards.4chan.org/s/'
+howmanypages = input('\nhow many pages do you want?\neg1: 1 (only the first page)\neg2: 10 (download all from page1 to page10)\n\n--> ')
+if howmanypages == type(int):
+  howmanypages = int(input())
+else:
+  howmanypages = 10
 
 def main():
   r = requests.get(url)
