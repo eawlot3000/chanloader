@@ -5,7 +5,7 @@
 pip3 install -r requirements.txt
 ```
 
-### usage
+### usage:
 ```
 git clone https://github.com/eawlot3000/chanloader.git && cd chanloader && ipython3 main.py
 ```
