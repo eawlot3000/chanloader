@@ -1,0 +1,44 @@
+[FUNCTIONS]
+(apply to all) create folders to store files of each url
+e.g.
+(first need to take 3 arguments right)
+python3 code [url1] [url2]
+create [url1] [url2] dir, store url1's output in url1, store url2's output in url2, 
+
+
+make thread perfect
+and then use thread in main code for pages
+
+
+[USAGE]
+take multi url 
+python3 thread.py url1 url2
+
+
+
+
+[CLEAN]
+
+make sure each image is unique!
+----
+itering all the metadata
+usage: for each folder / everything
+
+
+[TREE]
+.
+├── LICENSE
+├── README.md
+├── function
+├── main.py
+├── requirements.txt
+├── s
+│   └── main.py
+└── thread
+    ├── test.py
+    └── thread.py
+
+
+
+
+

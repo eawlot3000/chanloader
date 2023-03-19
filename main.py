@@ -1,8 +1,11 @@
+# this is wrong purpose because it doesnt do what it says it does
+# for now it just download the images that actually are on the page. so whats the point of the code?
+# FUNCTION ONE: see functions.
 import requests
 from bs4 import BeautifulSoup as bs
 import os
 
-chan = input('\ngive me a base channel\neg: if: https://boards.4chan.org/s/\nthen give me "s"\n\n--> ')
+chan = input('\ngive me a base channel\n\neg: https://boards.4chan.org/s/\nthen give me "s"\n\n--> ')
 chan = "https://boards.4chan.org/" + chan + "/"
 howmanypages = int(input('\nhow many pages do you want?\neg1: 1 (only the first page)\neg2: 10 (download all from page1 to page10)\n\n--> '))
 
@@ -17,9 +20,8 @@ def main():
     num += 1
   
   for i in range(len(ret)):
-    #TODO: for each page create a directory with page name to store files
     filename = str(ret[i][13:].replace('/', '_'))
-    if os.path.isfile('%s'%filename):
+    if os.path.isfile('%s'%filename): 
       print('\n%s'%filename, 'exists! you may have downloaded this link already\n')
     else:
       r = requests.get(str("https:") + ret[i])
