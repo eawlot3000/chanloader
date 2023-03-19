@@ -9,14 +9,24 @@ import subprocess
 
 print('you might grab the pics from threads\nnow i am offering that')
 
+''' now we take arguments
 #TODO: multi threads at the same time
-shows = input('\ngive me thread(s)\neg: b/thread/883854783\n\n--> ')
-for show in shows.split():
-  threads = 'https://boards.4chan.org/' + show
+    '''
+
+# get all threads
+if len(sys.argv) >= 2:
+  for show in sys.argv[1:]:
+    threads = 'https://boards.4chan.org/' + show
+else:
+  shows = input('\ngive me thread(s)\neg: b/thread/883854783\n\n--> ')
+  for show in shows.split():
+    threads = 'https://boards.4chan.org/' + show
+
   if requests.get(threads).status_code != 200:
     print(Fore.RED + '\nERROR: ' + Style.RESET_ALL + 'woo bro hold up check your threads url first')
     print(Fore.RED + threads + Style.RESET_ALL)
-    sys.exit(0)
+    continue
+
   
   # if working >>>>>>
   
