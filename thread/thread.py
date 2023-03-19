@@ -84,4 +84,4 @@ for show in shows.split():
   
   if error_move:
     print(Fore.RED, f'but {error_move} photos could not be moved to some folder\n', Style.RESET_ALL)
-  print("thread finished\n--------------------\n')
+  print('thread finished\n--------------------\n')

@@ -1,7 +1,6 @@
 show = input('\ngive me thread(s)\neg: b/thread/883854783\n\n--> ')
 single = 'https://boards.4chan.org/' + show
 
-if threads
 if 'thread' not in threads:
   print('woo bro check your threads right')
 r = requests.get(threads)
