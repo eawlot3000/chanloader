@@ -14,14 +14,11 @@ pip install -r requirements.txt
 
 # usage
 #### single run and then with instructions:
-```
+```bash
 python main.py
 ```
 
 ----
-# `TODO`
-* improve main.py, include thread to do multi pages works!
-
 
 
 ```bash
@@ -36,3 +33,7 @@ python main.py
     ├── test.py
     └── thread.py
 ```
+
+# `TODO`
+* improve main.py, include thread to do multi pages works!
+
