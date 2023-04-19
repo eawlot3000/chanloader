@@ -2,10 +2,13 @@
 you love [4chan](https://www.4chan.org)? but gotta download each file with so many clicks? nahhhh...<br>
 [chanloader](https://github.com/eawlot3000/chanloader) is a tool that help you download all the visual content of your fond channels on 4chan
 
-## features
+# features
 * **Multithreading?** speed up bro
-* support multi urls in single run
-* save all downloaded to a new folder! you name it!
+* support multi-thread urls in single run
+* save all downloaded to a new local folder! you name it!
+* display each [filename] and [filesize]
+* `WARNING` with too many requests
+
 
 # requirements
 ```bash
@@ -13,27 +16,31 @@ pip install -r requirements.txt
 ```
 
 # usage
-#### single run and then with instructions:
-```bash
+#### (with instructions) with channel, single run:
+```
 python main.py
 ```
 
+#### (with instructions) with threads
+```
+python thread.py
+```
+
+
 ----
 
-
-```bash
+```
 ├── LICENSE
 ├── README.md
-├── function
+├── function // for work only
 ├── main.py
 ├── requirements.txt
-├── s
-│   └── main.py
-└── thread
+└── thread // thread support!
     ├── test.py
-    └── thread.py
+    └── thread.py // `use this bro`
 ```
 
 # `TODO`
-* improve main.py, include thread to do multi pages works!
+* improve main, include thread to do multi pages works!
+* /* {feature: parse one channel url and then mass download all threads!} */
 

@@ -26,7 +26,7 @@ else:
   if requests.get(threads).status_code != 200:
     print(Fore.RED + '\nERROR: ' + Style.RESET_ALL + 'woo bro hold up check your threads url first')
     print(Fore.RED + threads + Style.RESET_ALL)
-    continue
+    #continue
 
   
   # if working >>>>>>
