@@ -1,6 +1,6 @@
 # chanloader 
 you love [4chan](https://www.4chan.org)? but gotta download each file with so many clicks? nahhhh...<br>
-chanloader is a tool that help you download all the visual content of your fond channels on 4chan
+[chanloader](https://github.com/eawlot3000/chanloader) is a tool that help you download all the visual content of your fond channels on 4chan
 
 ## features
 * **Multithreading?** speed up bro
@@ -8,7 +8,7 @@ chanloader is a tool that help you download all the visual content of your fond 
 * save all downloaded to a new folder! you name it!
 
 # requirements
-```
+```bash
 pip install -r requirements.txt
 ```
 
@@ -21,3 +21,18 @@ python main.py
 ----
 # `TODO`
 * improve main.py, include thread to do multi pages works!
+
+
+
+```bash
+├── LICENSE
+├── README.md
+├── function
+├── main.py
+├── requirements.txt
+├── s
+│   └── main.py
+└── thread
+    ├── test.py
+    └── thread.py
+```
