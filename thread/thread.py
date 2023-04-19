@@ -14,6 +14,7 @@ print('you might grab the pics from threads\nnow i am offering that')
     '''
 
 # get all threads
+# if multi urls, prompt user if set default folder name always so that run smoothly
 if len(sys.argv) >= 2:
   for show in sys.argv[1:]:
     threads = 'https://boards.4chan.org/' + show
@@ -30,13 +31,12 @@ else:
   
   # if working >>>>>>
   
-  # >>>>>> ask user to continue?
+  # >>>>>> WARNING: ask to continue?
   result = subprocess.run(['curl', 'ip.sb'], capture_output=True, text=True)
   print(Fore.GREEN, f'\nYour IP address is {result.stdout.strip()}\ntake it eazy yo\nyou know im not watching this')
   print(Fore.YELLOW, '\nIF CONTINUE, TAKE YOUR OWN RISK, RECREATIONAL USE ONLY, TOO MUCH REQUESTS COULD GET BANNED BY 4CHAN.\nIF YOU ARE NOT SURE EXIT NOW. (CTRL+C)')
   print(Fore.YELLOW, '\nPROCEED? (y/n)', Style.RESET_ALL)
-  proceed = input()
-  if proceed != 'y':
+  if input() != 'y':
     sys.exit(0)
   
   r = requests.get(threads)
